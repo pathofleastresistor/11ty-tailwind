@@ -1,0 +1,12 @@
+{
+  "name": "11ty-tailwind",
+  "license": "MIT",
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1",
+    "tailwindcss": "^3.3.2"
+  },
+  "scripts": {
+    "build": "eleventy --watch & tailwindcss -i ./src/css/styles.css -o ./_site/css/styles.css --watch",
+    "build:prod": "eleventy & tailwindcss -i ./src/css/styles.css -o ./_site/css/styles.css --minify"
+  }
+}
