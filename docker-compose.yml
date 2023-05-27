@@ -1,0 +1,9 @@
+version: "3"
+services:
+  test-site-frontend:
+    image: nginx:latest
+    ports:
+      - "8308:80"
+    volumes:
+      - ./_site:/usr/share/nginx/html:ro
+    restart: always
